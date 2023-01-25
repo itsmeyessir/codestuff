@@ -57,6 +57,7 @@ public class App {
         int inputNum = sc.nextInt();
         
         //Check if the input number is negative
+        while (inputNum < 0) {
         try {
             if(inputNum < 0) {
                 throw new IllegalArgumentException("Invalid input! Please enter a positive number.");
@@ -65,6 +66,7 @@ public class App {
             System.out.println(ex.getMessage());
             System.out.print("Enter a positive number: ");
             inputNum = sc.nextInt();
+        	}
         }
         
         // Calculate factorial using recursion
