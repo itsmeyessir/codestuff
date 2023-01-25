@@ -41,7 +41,8 @@ import java.math.*;
 import java.text.*;
 
 public class App {
-    public static void main(String[] args) {
+    @SuppressWarnings("resource")
+	public static void main(String[] args) {
     	
     	// Create a new scanner object to read input from the user
         Scanner sc = new Scanner(System.in);
@@ -95,6 +96,7 @@ public class App {
                 }
             }
         	System.out.println("Factorial(" + inputNum + ") = " + factorialString);
+        	sc.close();
         }
     
     // Recursive function to calculate factorial
