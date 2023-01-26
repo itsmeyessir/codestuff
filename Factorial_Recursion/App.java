@@ -41,8 +41,7 @@ import java.math.*;
 import java.text.*;
 
 public class App {
-    @SuppressWarnings("resource")
-	public static void main(String[] args) {
+    public static void main(String[] args) {
     	
     	// Create a new scanner object to read input from the user
         Scanner sc = new Scanner(System.in);
